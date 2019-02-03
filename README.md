@@ -1,4 +1,5 @@
 # k8-homework
+I
 
 1.)This cronjob will run one job every 1 minutes (using a cron format for scheduling) and display “Hello” and complete within 10 second
 To launch this job you just need to run the following command
@@ -13,3 +14,8 @@ To launch this job you just need to run the following command
 
 
 ###kubectl describe job or kubectl describe cronjob
+
+II
+
+1.) This doc is about cluster troubleshooting, below this link 
+https://kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/
