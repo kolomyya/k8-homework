@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-dns-headless
+  labels:
+    app: nginx-dns-headless
+spec:
+  hostname: nginx-dns-headless
+  subdomain: nginx-dns-headless-service
+  containers:
+  - image: nginx
+    name: nginx
+    ports:
+    - containerPort: 80
+      name: http
+      protocol: TCP
