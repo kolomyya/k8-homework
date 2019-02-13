@@ -6,3 +6,12 @@ NAME              READY     STATUS    RESTARTS   AGE       IP           NODE
 ubuntu-ds-5rr2h   1/1       Running   0          9m        10.60.2.15   gke-k8-clucter-default-pool-20bea9cf-cxzn
 ubuntu-ds-7rb4n   1/1       Running   0          9m        10.60.1.22   gke-k8-clucter-default-pool-20bea9cf-lwdp
 ubuntu-ds-x74lc   1/1       Running   0          9m        10.60.0.17   gke-k8-clucter-default-pool-20bea9cf-7v0w
+
+
+
+
+
+To check how many pods  ready, (Not including nodes tainted NoSchedule).
+ You have to run:
+#1.   kubectl get nodes -o wide > task-D.txt
+#2.   kubectl get pods -o wide >> task-D.txt
