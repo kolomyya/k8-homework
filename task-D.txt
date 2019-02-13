@@ -1,0 +1,8 @@
+NAME                                        STATUS    ROLES     AGE       VERSION         EXTERNAL-IP      OS-IMAGE                             KERNEL-VERSION   CONTAINER-RUNTIME
+gke-k8-clucter-default-pool-20bea9cf-7v0w   Ready     <none>    3h        v1.11.6-gke.6   35.202.72.10     Container-Optimized OS from Google   4.14.89+         docker://17.3.2
+gke-k8-clucter-default-pool-20bea9cf-cxzn   Ready     <none>    3h        v1.11.6-gke.6   35.193.214.147   Container-Optimized OS from Google   4.14.89+         docker://17.3.2
+gke-k8-clucter-default-pool-20bea9cf-lwdp   Ready     <none>    3h        v1.11.6-gke.6   35.224.163.141   Container-Optimized OS from Google   4.14.89+         docker://17.3.2
+NAME              READY     STATUS    RESTARTS   AGE       IP           NODE
+ubuntu-ds-5rr2h   1/1       Running   0          9m        10.60.2.15   gke-k8-clucter-default-pool-20bea9cf-cxzn
+ubuntu-ds-7rb4n   1/1       Running   0          9m        10.60.1.22   gke-k8-clucter-default-pool-20bea9cf-lwdp
+ubuntu-ds-x74lc   1/1       Running   0          9m        10.60.0.17   gke-k8-clucter-default-pool-20bea9cf-7v0w

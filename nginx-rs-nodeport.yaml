@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-rs
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    nodePort: 30444 # Listening port on Nodes
+    port: 81 # Listening port on ClusterIP
+    targetPort: 80 # Pods listening port
+    protocol: TCP
+  selector:
+    app: k8-service
