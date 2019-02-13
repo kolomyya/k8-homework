@@ -1,0 +1,14 @@
+NAME                         TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE       SELECTOR
+kubernetes                   ClusterIP   10.11.240.1   <none>        443/TCP   26m       <none>
+nginx-dns-headless-service   ClusterIP   None          <none>        80/TCP    19m       app=nginx-dns-headless
+
+NAME                 READY     STATUS    RESTARTS   AGE       IP          NODE                                                LABELS
+centos-pod           1/1       Running   0          5m        10.8.1.7    gke-standard-cluster-1-default-pool-e39b48e2-qndb   app=centos-pod
+nginx-dns-headless   1/1       Running   0          19m       10.8.0.10   gke-standard-cluster-1-default-pool-e39b48e2-3k2l   app=nginx-dns-headless
+
+
+Server:         10.11.240.10
+Address:        10.11.240.10#53
+
+Name:   nginx-dns-headless-service.default.svc.cluster.local
+Address: 10.8.0.10
